@@ -1,5 +1,5 @@
 os.pullEvent = os.pullEventRaw
-os.loadAPI(/Sys/API/Encrypt.lua)
+os.loadAPI("/Sys/API/Encrypt.lua")
 
 -- Start of Variables
 local OSName = "CloudOS"
