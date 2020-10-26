@@ -16,7 +16,11 @@ local files = {
     [4] = {
         "/Sys/API/Encrypt.lua",
         "https://raw.githubusercontent.com/V01dGaming/CloudOS/master/Sys/API/Encrypt.lua"
-    }
+    },
+	[5] = {
+		"/Sys/.version",
+		"https://raw.githubusercontent.com/V01dGaming/CloudOS/master/Sys/remoteVersion"
+	}
 }
 
 
@@ -30,7 +34,7 @@ local lVersion = localVersion.readAll()
 localVersion.close()
 
 if rVersion ~= lVersion then
-	term.setCursorPos(1,1)
+    term.setCursorPos(1,1)
     print("Downloading Update...")
     print("Your Verison: ", lVersion)
     print("New Version: ", rVersion)
