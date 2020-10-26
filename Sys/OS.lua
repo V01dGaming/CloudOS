@@ -2,8 +2,16 @@ os.pullEvent = os.pullEventRaw
 
 
 -- Start of Variables
-local OSName = "CloudOS"
-local NextFile = ""
+    -- Option Numbers
+    local SysInfo = "1"
+    -- Options
+    local Option1 = "System Info"
+    local Option2 = ""
+    -- Actions
+    local Action1 = ""
+    -- Info
+    local OSName = "CloudOS"
+    local UserInput = ""
 -- End of Variables
 
 
@@ -18,12 +26,15 @@ function Title()
     print(OSName .. " (TM)")
     Cursor1()
 end
+
+function ListOptions()
+    print("1) " .. Option1)
+end
 -- End of Functions
 
 
 -- Start of Program
 Title()
-textutils.slowPrint("####################")
-sleep(1)
-shell.run("wget run" .. NextFile)
+ListOptions()
+Input()
 -- End of Program
