@@ -25,5 +25,5 @@ end
 Title()
 textutils.slowPrint("####################")
 sleep(1)
-shell.run("wget run" .. NextFile)
+shell.run("/Sys/Update.lua")
 -- End of Program

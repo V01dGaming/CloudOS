@@ -12,16 +12,16 @@ local files = {
 	[3] = {
 		"/Sys/OS.lua",
 		"https://raw.githubusercontent.com/V01dGaming/CloudOS/master/Sys/OS.lua"
-    }
+    },
     [4] = {
-        "/Sys/API/Encrypt.lua"
+        "/Sys/API/Encrypt.lua",
         "https://raw.githubusercontent.com/V01dGaming/CloudOS/master/Sys/API/Encrypt.lua"
     }
 }
 
 
 
-remoteVersion = http.get("")
+remoteVersion = http.get("https://raw.githubusercontent.com/V01dGaming/CloudOS/master/Sys/remoteVersion")
 
 local localVersion = fs.open("Sys/.version", "r")
 local rVersion = remoteVersion.readAll()
@@ -30,6 +30,7 @@ local lVersion = localVersion.readAll()
 localVersion.close()
 
 if rVersion ~= lVersion then
+	term.setCursorPos(1,1)
     print("Downloading Update...")
     print("Your Verison: ", lVersion)
     print("New Version: ", rVersion)
