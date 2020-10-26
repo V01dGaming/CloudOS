@@ -3,10 +3,13 @@ os.pullEvent = os.pullEventRaw
 
 -- Start of Variables
     -- Option Numbers
-    local SysInfo = "1"
+    local Notices = "1"
+    local SysInfo = "2"
+    local Reboot = "3"
     -- Options
-    local Option1 = "System Info"
-    local Option2 = ""
+    local Option1 = "Notice Board"
+    local Option2 = "System Info"
+    local Option3 = "Reboot"
     -- Actions
     local Action1 = ""
     -- Info

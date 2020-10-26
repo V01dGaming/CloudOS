@@ -1,5 +1,5 @@
 term.clear()
-local nextFile = "/Sys/OS.lua"
+local nextFile = "/Sys/Login.lua"
 local files = {
 	[1] = {
 		"startup.lua",
