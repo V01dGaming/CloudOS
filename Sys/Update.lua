@@ -20,7 +20,11 @@ local files = {
 	[5] = {
 		"/Sys/.version",
 		"https://raw.githubusercontent.com/V01dGaming/CloudOS/master/Sys/remoteVersion"
-	}
+    },
+    [6] = {
+        "/Sys/Login.lua",
+        "https://raw.githubusercontent.com/V01dGaming/CloudOS/master/Sys/Login.lua"
+    }
 }
 
 
