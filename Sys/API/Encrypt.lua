@@ -1,5 +1,3 @@
-local Encrypt.lua 
-
 function encrypt(text, key)
     return text:gsub("%a", function(t)
             local base = (t:lower() == t and string.byte('a') or string.byte('A'))
