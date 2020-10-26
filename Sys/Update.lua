@@ -3,19 +3,19 @@ local nextFile = "/Sys/OS.lua"
 local files = {
 	[1] = {
 		"startup.lua",
-		""
+		"https://raw.githubusercontent.com/V01dGaming/CloudOS/master/startup.lua"
 	},
 	[2] = {
 		"/Sys/Update.lua",
-		""
+		"https://raw.githubusercontent.com/V01dGaming/CloudOS/master/Sys/Update.lua"
 	},
 	[3] = {
 		"/Sys/OS.lua",
-		""
+		"https://raw.githubusercontent.com/V01dGaming/CloudOS/master/Sys/OS.lua"
     }
     [4] = {
         "/Sys/API/Encrypt.lua"
-        ""
+        "https://raw.githubusercontent.com/V01dGaming/CloudOS/master/Sys/API/Encrypt.lua"
     }
 }
 
